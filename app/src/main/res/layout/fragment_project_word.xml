@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/bg_img"
+        android:layout_width="120dp"
+        android:layout_height="165dp"
+        android:layout_gravity="center"
+        android:background="@mipmap/resumption_record_none"
+        android:visibility="invisible"/>
+
+    <cn.bingoogolapple.refreshlayout.BGARefreshLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/fresh_layout">
+
+        <ListView
+            android:id="@+id/project_word_list"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:scrollbars="none"
+            android:divider="#f1f1f1"
+            android:dividerHeight="1dp"/>
+
+    </cn.bingoogolapple.refreshlayout.BGARefreshLayout>
+
+</FrameLayout>

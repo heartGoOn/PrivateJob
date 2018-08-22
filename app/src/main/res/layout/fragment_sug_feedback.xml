@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="15dp"
+    android:focusableInTouchMode="true"
+    android:focusable="true">
+    
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:text="@string/feedhint"/>
+
+    <EditText
+        android:id="@+id/feedback_content"
+        android:layout_width="match_parent"
+        android:layout_height="102dp"
+        android:background="@color/colorWhite"
+        android:gravity="top|left"
+        android:lineSpacingMultiplier="1.2"
+        android:maxLines="4"
+        android:padding="10dp"
+        android:textSize="15sp"
+        android:layout_marginTop="15dp"/>
+
+    <Button
+        android:id="@+id/btn_submit"
+        android:layout_width="330dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="15dp"
+        android:background="@color/colorPrimary"
+        android:text="提        交"
+        android:textColor="@color/colorWhite"
+        android:textSize="14sp" />
+
+</LinearLayout>

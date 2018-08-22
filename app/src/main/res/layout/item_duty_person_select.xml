@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:padding="10dp"
+    android:orientation="horizontal"
+    android:gravity="center_vertical"
+    android:minHeight="50dp"
+    android:background="@color/colorWhite">
+
+    <CheckBox
+        android:id="@+id/check_box"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="履职人"
+        android:textSize="16sp"
+        android:padding="10dp"
+        />
+
+    <!--<TextView
+        android:id="@+id/check_person"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:text="履职人"
+        android:textSize="16sp"/>-->
+
+
+</LinearLayout>

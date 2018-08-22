@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">宁海人大履职</string>
+
+    <!--登录-->
+    <string name="login_title">宁海人大履职平台</string>
+    <string name="hint_account">请输入用户名</string>
+    <string name="hint_password">请输入密码</string>
+
+    <!--首页-->
+    <string name="title_home">首页</string>
+    <string name="title_resumption">履职</string>
+    <string name="title_addressbook">通讯录</string>
+    <string name="title_mine">我的</string>
+
+    <string name="title_home_bar">人大履职平台</string>
+    <string name="home_pager_title1">正在跟进</string>
+    <string name="home_pager_title2">历史项目</string>
+
+    <string name="notifyTitle">提示</string>
+    <string name="notifyMsg">当前应用缺少必要权限。\n\n请点击\"设置\"-\"权限\"-打开所需权限。</string>
+    <string name="setting">设置</string>
+    <string name="cancel">取消</string>
+
+    <string name="feedhint">您对APP使用上有什么宝贵意见呢？</string>
+
+    <!--文档显示提示-->
+    <string name="word_msg1">文件未下载</string>
+    <string name="word_msg2">文件暂不支持本地查看，请用其它应用打开</string>
+
+
+</resources>

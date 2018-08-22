@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/duty_person_item_height"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/colorWhite"
+    android:minHeight="@dimen/duty_person_item_height">
+
+    <FrameLayout
+        android:id="@+id/person_rank"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginLeft="10dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <ImageView
+            android:id="@+id/img_rank"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@mipmap/dutyanaysis_no1"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/txt_rank"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="4"
+            android:textSize="14sp"
+            android:textColor="#c40014"/>
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        app:layout_constraintLeft_toRightOf="@+id/person_rank"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <include layout="@layout/item_duty_person" />
+    </LinearLayout>
+    
+    <TextView
+        android:id="@+id/duty_num"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:textSize="12sp"
+        android:textColor="#ff8d07"
+        android:gravity="center"
+        android:layout_marginRight="15dp"
+        android:text="履职次数 4"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+
+</android.support.constraint.ConstraintLayout>

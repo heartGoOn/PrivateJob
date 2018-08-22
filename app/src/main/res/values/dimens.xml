@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--登录-->
+    <dimen name="title_height">34dp</dimen>
+    <dimen name="edit_txt_width">269dp</dimen>
+    <dimen name="edit_txt_height">38dp</dimen>
+    <dimen name="button_width">269dp</dimen>
+    <dimen name="button_height">38dp</dimen>
+
+    <!--首页-->
+    <dimen name="drawer_right_width">273dp</dimen>
+    <dimen name="drawer_radio_group_width">245dp</dimen>
+    <dimen name="drawer_radio_group_height">67dp</dimen>
+    <dimen name="drawer_radio_button_width">72dp</dimen>
+    <dimen name="drawer_radio_button_height">29dp</dimen>
+    <dimen name="home_item_height">86dp</dimen>
+    <dimen name="home_item_img_width">86dp</dimen>
+    <dimen name="home_item_img_height">68dp</dimen>
+
+    <!--个人-->
+    <dimen name="mine_header_height">130dp</dimen>
+    <dimen name="mine_item_height">52dp</dimen>
+
+    <!--履职-->
+    <dimen name="duty_item_height">62dp</dimen>
+    <dimen name="popup_window_width">90dp</dimen>
+    <dimen name="popup_window_height">135dp</dimen>
+    <dimen name="popup_window_height1">90dp</dimen>
+    <dimen name="popup_window_height2">45dp</dimen>
+
+    <!--通讯录-->
+    <dimen name="sidebar_text_size">14sp</dimen>
+
+    <!--履职通知-->
+    <dimen name="duty_notice_item_height">88dp</dimen>
+
+    <!--履职代表-->
+    <dimen name="duty_person_item_height">60dp</dimen>
+
+</resources>

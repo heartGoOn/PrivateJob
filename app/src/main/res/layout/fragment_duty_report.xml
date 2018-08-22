@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:focusableInTouchMode="true"
+    android:focusable="true">
+
+    <RelativeLayout
+        android:id="@+id/project_select"
+        android:layout_width="match_parent"
+        android:layout_height="43dp"
+        android:background="@drawable/selector_list_item"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="15dp"
+            android:text="项目选择"
+            android:textColor="#333333"
+            android:textSize="14sp" />
+
+        <ImageView
+            android:id="@+id/img_select"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:src="@mipmap/mine_down" />
+
+        <TextView
+            android:id="@+id/pj_select_result"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@+id/img_select"
+            android:layout_marginRight="20dp"
+            android:text="选择项目"
+            android:textColor="#cccccc"
+            android:textSize="14sp" />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#f5f5f5" />
+
+    <RelativeLayout
+        android:id="@+id/duty_type"
+        android:layout_width="match_parent"
+        android:layout_height="43dp"
+        android:background="@drawable/selector_list_item"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="15dp"
+            android:text="履职类型"
+            android:textColor="#333333"
+            android:textSize="14sp" />
+
+        <ImageView
+            android:id="@+id/img_select1"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:src="@mipmap/mine_down" />
+
+        <TextView
+            android:id="@+id/type_select_result"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@+id/img_select1"
+            android:layout_marginRight="20dp"
+            android:text="选择履职类型"
+            android:textColor="#cccccc"
+            android:textSize="14sp" />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#f5f5f5" />
+
+    <RelativeLayout
+        android:id="@+id/date_select"
+        android:layout_width="match_parent"
+        android:layout_height="43dp"
+        android:background="@drawable/selector_list_item"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="15dp"
+            android:text="时间"
+            android:textColor="#333333"
+            android:textSize="14sp" />
+
+        <ImageView
+            android:id="@+id/img_select2"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:src="@mipmap/mine_down" />
+
+        <TextView
+            android:id="@+id/time_select_result"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@+id/img_select2"
+            android:layout_marginRight="20dp"
+            android:text="选择时间"
+            android:textColor="#cccccc"
+            android:textSize="14sp" />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#f5f5f5" />
+
+    <EditText
+        android:id="@+id/duty_content"
+        android:layout_width="match_parent"
+        android:layout_height="102dp"
+        android:background="@color/colorWhite"
+        android:gravity="top|left"
+        android:hint="请输入内容"
+        android:lineSpacingMultiplier="1.2"
+        android:maxLines="3"
+        android:padding="15dp"
+        android:textSize="15sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:background="@color/colorWhite">
+
+        <ImageView
+            android:id="@+id/pick_pic1"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="76dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:src="@mipmap/duty_report_pic" />
+
+        <ImageView
+            android:id="@+id/pick_pic2"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="76dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:src="@mipmap/duty_report_pic" />
+
+        <ImageView
+            android:id="@+id/pick_pic3"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="76dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:src="@mipmap/duty_report_pic" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorWhite"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingBottom="10dp"
+        android:paddingLeft="15dp"
+        android:paddingTop="10dp">
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@mipmap/common_localize" />
+
+        <TextView
+            android:id="@+id/location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="点击定位"
+            android:textColor="#333333"
+            android:textSize="12sp" />
+
+    </LinearLayout>
+
+    <CheckBox
+        android:id="@+id/isSms"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="短信提醒项目负责人"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="10dp"
+        />
+
+    <Button
+        android:id="@+id/btn_submit"
+        android:layout_width="330dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="15dp"
+        android:background="@color/colorPrimary"
+        android:text="提        交"
+        android:textColor="@color/colorWhite"
+        android:textSize="14sp" />
+
+</LinearLayout>

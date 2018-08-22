@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="bottom">
+
+    <WebView
+        android:id="@+id/webView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+    </WebView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:orientation="horizontal"
+        android:background="#f1f1f1"
+        android:gravity="center_vertical"
+        android:padding="2dp"
+        android:id="@+id/lin_submit">
+
+        <EditText
+            android:id="@+id/et_submit"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="6"
+            android:background="@drawable/draw_white"
+            android:maxLines="2"
+            android:textSize="16sp"
+            android:padding="3dp"
+            android:gravity="top|left"
+            android:layout_marginLeft="5dp"/>
+
+        <Button
+            android:id="@+id/btn_submit"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:text="回复"
+            android:textColor="@color/colorWhite"
+            android:layout_marginLeft="10dp"
+            android:enabled="false"
+            android:background="@drawable/select_btn_submit"/>
+
+    </LinearLayout>
+
+</LinearLayout>

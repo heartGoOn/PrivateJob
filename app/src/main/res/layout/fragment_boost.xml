@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:focusableInTouchMode="true"
+    android:focusable="true">
+
+    <RelativeLayout
+        android:id="@+id/project_select"
+        android:layout_width="match_parent"
+        android:layout_height="43dp"
+        android:background="@drawable/selector_list_item"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="15dp"
+            android:text="项目选择"
+            android:textColor="#333333"
+            android:textSize="14sp" />
+
+        <ImageView
+            android:id="@+id/img_select"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:src="@mipmap/mine_more" />
+
+        <TextView
+            android:id="@+id/pj_select_result"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@+id/img_select"
+            android:layout_marginRight="20dp"
+            android:text="选择项目"
+            android:textColor="#cccccc"
+            android:textSize="14sp" />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#f5f5f5" />
+
+    <RelativeLayout
+        android:id="@+id/boost_person"
+        android:layout_width="match_parent"
+        android:layout_height="43dp"
+        android:background="@drawable/selector_list_item"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="15dp"
+            android:text="提醒对象"
+            android:textColor="#333333"
+            android:textSize="14sp" />
+
+        <ImageView
+            android:id="@+id/img_select1"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:src="@mipmap/mine_more" />
+
+        <TextView
+            android:id="@+id/pr_select_result"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@+id/img_select1"
+            android:layout_marginRight="20dp"
+            android:text="选择提醒对象"
+            android:textColor="#cccccc"
+            android:textSize="14sp" />
+
+    </RelativeLayout>
+
+    <EditText
+        android:id="@+id/boost_content"
+        android:layout_width="match_parent"
+        android:layout_height="102dp"
+        android:background="@color/colorWhite"
+        android:gravity="top|left"
+        android:hint="请输入提醒内容"
+        android:lineSpacingMultiplier="1.2"
+        android:maxLines="3"
+        android:padding="15dp"
+        android:textSize="15sp"
+        android:textColorHint="#cccccc"
+        android:layout_marginTop="20dp"/>
+
+</LinearLayout>

@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.lf.ninghaisystem">
+
+
+    <!-- 获取运营商信息，用于支持提供运营商信息相关的接口 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <!-- 用于访问wifi网络信息，wifi信息会用于进行网络定位 -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <!-- 这个权限用于获取wifi的获取权限，wifi信息会用来进行网络定位 -->
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_CONFIGURATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <!-- 需要运行时注册的权限 -->
+    <!-- 用于进行网络定位 -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <!-- 用于访问GPS定位 -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <!-- 用于提高GPS定位速度 -->
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
+    <!-- 写入扩展存储，向扩展卡写入数据，用于写入缓存定位数据 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!-- 读取缓存数据 -->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <!-- 用于读取手机当前的状态 -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <!-- 更改设置 -->
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <!-- 支持iBeancon 需要蓝牙权限 -->
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <!-- 支持个推3.0 电子围栏功能 -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
+    <application
+        android:name=".activities.MyApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <!-- 设置key -->
+        <meta-data
+            android:name="com.amap.api.v2.apikey"
+            android:value="ab5a8f8f6097a619a4ba396cecb641b3" />
+        <!-- 定位需要的服务 -->
+        <service android:name="com.amap.api.location.APSService" />
+
+        <activity
+            android:name=".activities.HomeActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".activities.LoginActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppFullScreenTheme" />
+        <activity
+            android:name=".activities.ProjectMainAcitvity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.UserMsgActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.SettingActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.DutyReportActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.MessageActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.DutyPersonActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.ForgetActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.BoostActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".imgcrop.ImageCropActivity"
+            android:screenOrientation="portrait" />
+
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="com.lf.ninghaisystem.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/filepaths" />
+        </provider>
+
+        <activity
+            android:name=".activities.DutyAnalysisActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.ProjectWordActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.ProjectPlanActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.ProjectProcessActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.DutyConditionActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.DepartmentEvaluateActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.RepresentEvaluateActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.DutyPersonDetailedActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.AnalysisActivity"
+            android:screenOrientation="portrait" />
+
+        <service
+            android:name=".service.mPushService"
+            android:exported="true"
+            android:label="PushService"
+            android:process=":pushservice" />
+        <service android:name=".service.mIntentService" />
+
+        <activity
+            android:name=".activities.NotifyProcessActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.ProjectWordDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.WordActivity"
+            android:screenOrientation="portrait">
+
+        </activity>
+        <activity
+            android:name=".activities.ProjectDutyActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.BannerContentActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.SugFeedbackActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.MyDutyActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.BoostPersonActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.LauncherActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppFullScreenTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".activities.ChildProjectActivity" />
+        <activity android:name=".activities.ProjectEvaluateActivity"></activity>
+    </application>
+
+</manifest>
